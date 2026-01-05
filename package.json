@@ -1,0 +1,26 @@
+{
+  "name": "derek-wu-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Derek Wu - Machine Learning Engineer & Venture Capital Investor",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "machine-learning",
+    "venture-capital",
+    "developer-portfolio",
+    "ml-engineer"
+  ],
+  "author": "Derek Wu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/personal-website"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

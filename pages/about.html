@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About - Derek Wu</title>
+    <meta name="description" content="Learn about Derek Wu's journey from Chemical Engineering to Machine Learning to Venture Capital"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden antialiased">
+
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-[#1a2634] border-b border-[#f0f2f4] dark:border-gray-800">
+    <nav class="flex flex-col px-6 py-4 gap-4">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="blog.html">Blog</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="vault.html">Vault</a>
+    </nav>
+</div>
+
+<main class="flex-1 flex flex-col items-center w-full">
+    <!-- Hero Section -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 py-12 lg:py-20">
+        <div class="flex flex-col gap-6 animate-fade-in-up">
+            <h1 class="text-[#111418] dark:text-white text-5xl sm:text-6xl lg:text-7xl font-black font-display leading-tight tracking-tight">
+                About Me
+            </h1>
+            <p class="text-[#637588] dark:text-gray-400 text-xl sm:text-2xl max-w-3xl leading-relaxed font-serif italic">
+                From chemical reactions to neural networks to investment decisions — a non-linear journey through technology and capital.
+            </p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Left Column -->
+            <div class="space-y-6 text-[#637588] dark:text-gray-400 leading-relaxed text-lg">
+                <div>
+                    <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">The Journey</h2>
+                    <p>
+                        I started my career in <strong class="text-[#111418] dark:text-white">Chemical Engineering</strong>, fascinated by how molecular structures determine material properties. That same pattern-recognition mindset led me to machine learning, where I discovered that neural networks and chemical reactions share surprising parallels — both are about transformations, optimization, and finding elegant solutions to complex problems.
+                    </p>
+                </div>
+
+                <p>
+                    Over <strong class="text-[#111418] dark:text-white">3.5 years as an ML Engineer</strong>, I built systems that processed millions of data points daily. I worked on image processing for national intelligence, developed AI healthcare applications that assisted radiologists, and at <strong class="text-[#111418] dark:text-white">Capital One</strong>, created fraud detection systems protecting millions of customers in real-time.
+                </p>
+
+                <p>
+                    The technical work was deeply fulfilling, but I found myself increasingly curious about the business side — why certain ML companies succeeded while others failed, how to identify genuine innovation versus hype, and where capital could create the most impact.
+                </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6 text-[#637588] dark:text-gray-400 leading-relaxed text-lg">
+                <p>
+                    This curiosity led me to pursue an <strong class="text-[#111418] dark:text-white">MBA</strong>, where I studied finance, strategy, and entrepreneurship. The transition to <strong class="text-[#111418] dark:text-white">Venture Capital</strong> was natural — I could combine my technical depth with investment analysis to back founders building the next generation of AI and ML companies.
+                </p>
+
+                <p>
+                    Today, I invest in early-stage startups at the intersection of machine learning and real-world applications — healthcare, fintech, enterprise automation. My engineering background helps me evaluate technical feasibility and team capabilities, while my business training guides investment thesis and market analysis.
+                </p>
+
+                <p>
+                    I also run a <strong class="text-[#111418] dark:text-white">consulting practice</strong> helping small businesses leverage machine learning. Many companies know they need AI but don't know where to start. I help them identify high-impact use cases, build proof-of-concepts, and deploy production systems that drive real ROI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-16">
+        <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-8">Experience</h2>
+        <div class="space-y-8">
+            <!-- VC -->
+            <div class="flex gap-6 group">
+                <div class="flex flex-col items-center">
+                    <div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">account_balance</span>
+                    </div>
+                    <div class="w-0.5 flex-1 bg-[#e5e7eb] dark:bg-gray-800 mt-4"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <div class="flex items-start justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Venture Capital Investor</h3>
+                            <p class="text-[#637588] dark:text-gray-400 font-medium">Current Role</p>
+                        </div>
+                        <span class="text-sm text-[#637588] dark:text-gray-400">2023 - Present</span>
+                    </div>
+                    <p class="text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Investing in early-stage ML and AI startups. Focus areas: healthcare AI, fintech automation, and enterprise ML infrastructure. Conduct technical due diligence, evaluate founding teams, and support portfolio companies with go-to-market strategy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Capital One -->
+            <div class="flex gap-6 group">
+                <div class="flex flex-col items-center">
+                    <div class="size-12 rounded-full bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">security</span>
+                    </div>
+                    <div class="w-0.5 flex-1 bg-[#e5e7eb] dark:bg-gray-800 mt-4"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <div class="flex items-start justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Machine Learning Engineer</h3>
+                            <p class="text-[#637588] dark:text-gray-400 font-medium">Capital One</p>
+                        </div>
+                        <span class="text-sm text-[#637588] dark:text-gray-400">2021 - 2023</span>
+                    </div>
+                    <p class="text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Built real-time fraud detection systems processing millions of transactions daily. Reduced fraud losses by 40% using ensemble ML models. Led feature engineering, model deployment, and A/B testing initiatives.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Healthcare AI -->
+            <div class="flex gap-6 group">
+                <div class="flex flex-col items-center">
+                    <div class="size-12 rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">biotech</span>
+                    </div>
+                    <div class="w-0.5 flex-1 bg-[#e5e7eb] dark:bg-gray-800 mt-4"></div>
+                </div>
+                <div class="flex-1 pb-8">
+                    <div class="flex items-start justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">ML Engineer - Healthcare</h3>
+                            <p class="text-[#637588] dark:text-gray-400 font-medium">Healthcare AI Startup</p>
+                        </div>
+                        <span class="text-sm text-[#637588] dark:text-gray-400">2019 - 2021</span>
+                    </div>
+                    <p class="text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Developed deep learning models for medical image analysis. Assisted radiologists in early disease detection with 95%+ accuracy. Worked with CNNs, transfer learning, and explainable AI techniques.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Intelligence -->
+            <div class="flex gap-6 group">
+                <div class="flex flex-col items-center">
+                    <div class="size-12 rounded-full bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-start justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">ML Engineer - Computer Vision</h3>
+                            <p class="text-[#637588] dark:text-gray-400 font-medium">National Intelligence</p>
+                        </div>
+                        <span class="text-sm text-[#637588] dark:text-gray-400">2017 - 2019</span>
+                    </div>
+                    <p class="text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Built image processing systems for automated analysis and pattern recognition. Worked with large-scale datasets, object detection, and anomaly detection algorithms for national security applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-16">
+        <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-8">Skills & Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Technical -->
+            <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined">code</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white mb-4">Technical</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Python</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">TensorFlow</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">PyTorch</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">React</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">TypeScript</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">AWS</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Docker</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">SQL</span>
+                </div>
+            </div>
+
+            <!-- ML/AI -->
+            <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                <div class="size-12 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white mb-4">ML/AI</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Computer Vision</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">NLP</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Deep Learning</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">MLOps</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Feature Engineering</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Model Deployment</span>
+                </div>
+            </div>
+
+            <!-- Business -->
+            <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                <div class="size-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined">business_center</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white mb-4">Business</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Investment Analysis</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Due Diligence</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Strategy</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Product Management</span>
+                    <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full font-medium">Consulting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I'm Looking For -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-20">
+        <div class="bg-gradient-to-br from-primary to-blue-600 rounded-2xl p-8 md:p-12 text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">What I'm Looking For</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined">handshake</span>
+                        Investment Opportunities
+                    </h3>
+                    <p class="text-blue-100 leading-relaxed">
+                        Early-stage startups (pre-seed to Series A) building ML/AI solutions for healthcare, fintech, or enterprise automation. Looking for technical founders with deep domain expertise and clear paths to revenue.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                        Consulting Projects
+                    </h3>
+                    <p class="text-blue-100 leading-relaxed">
+                        Small to mid-size businesses wanting to implement ML solutions. Ideal projects: customer segmentation, demand forecasting, recommendation systems, or process automation with measurable ROI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#1a2634] py-8">
+    <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-[#637588] dark:text-gray-400">© 2024 Derek Wu. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/navbar-loader.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

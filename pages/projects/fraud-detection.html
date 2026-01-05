@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Fraud Detection ML System - Derek Wu</title>
+    <meta name="description" content="Real-time fraud detection system at Capital One"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden antialiased">
+
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
+
+<main class="flex-1 flex flex-col items-center w-full">
+    <!-- Breadcrumb -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pt-8">
+        <div class="flex items-center gap-2 text-sm">
+            <a href="../../index.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <a href="../projects.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Projects</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <span class="text-[#111418] dark:text-white font-semibold">Fraud Detection ML System</span>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <!-- Left: Project Info -->
+            <div class="lg:col-span-3 space-y-6">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-sm font-medium text-blue-700 dark:text-blue-300">Machine Learning</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 dark:bg-green-900/30 text-sm font-medium text-green-700 dark:text-green-300">Fintech</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#111418] dark:text-white leading-tight mb-6">
+                        Fraud Detection ML System
+                    </h1>
+                    <p class="text-xl text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Real-time fraud detection system processing millions of transactions at Capital One using ensemble ML models and advanced feature engineering.
+                    </p>
+                </div>
+
+                <!-- Project Image -->
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-blue-500 to-purple-700 shadow-xl">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-9xl opacity-30">security</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Project Meta -->
+            <div class="lg:col-span-2">
+                <div class="sticky top-24 space-y-6">
+                    <!-- Meta Info Card -->
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 space-y-4">
+                        <div>
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Role</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">Machine Learning Engineer</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Organization</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">Capital One</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Timeline</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">2021 - 2023</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Tech Stack</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Python</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">TensorFlow</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">XGBoost</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">AWS SageMaker</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Kafka</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="bg-gradient-to-br from-primary to-blue-600 rounded-xl p-6 text-white">
+                        <h3 class="text-sm font-bold uppercase tracking-wider mb-4 opacity-90">Impact Metrics</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-3xl font-black">$50M+</div>
+                                <div class="text-sm opacity-90">Fraud prevented annually</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-black">99.7%</div>
+                                <div class="text-sm opacity-90">Detection accuracy</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-black">&lt;100ms</div>
+                                <div class="text-sm opacity-90">Avg. response time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-20">
+        <div class="max-w-4xl space-y-12">
+            <!-- Overview -->
+            <div class="prose dark:prose-invert max-w-none">
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Overview</h2>
+                <p class="text-[#637588] dark:text-gray-400 leading-relaxed text-lg">
+                    At Capital One, I built and deployed a real-time fraud detection system that processes millions of credit card transactions daily. The system uses an ensemble of machine learning models to identify fraudulent patterns with extremely low latency, protecting customers while minimizing false positives that could disrupt legitimate purchases.
+                </p>
+            </div>
+
+            <!-- Challenge -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">The Challenge</h2>
+                <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Real-time Processing</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Process transactions in under 100ms to avoid payment delays</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Class Imbalance</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Fraud represents less than 0.1% of all transactions</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Evolving Patterns</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Fraudsters constantly adapt tactics, requiring adaptive models</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Scale</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Handle millions of transactions per day with 99.99% uptime</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Solution -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-6">Technical Approach</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">analytics</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Feature Engineering</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Developed 200+ features including transaction patterns, velocity metrics, device fingerprinting, and behavioral anomalies.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">model_training</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Ensemble Models</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Combined gradient boosting (XGBoost), neural networks, and isolation forests for robust detection.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">speed</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Real-time Pipeline</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Built streaming architecture using Kafka and AWS SageMaker for sub-100ms inference at scale.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">loop</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Continuous Learning</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Implemented automated retraining pipeline to adapt to emerging fraud patterns weekly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Results & Impact</h2>
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 border border-green-200 dark:border-green-800 rounded-xl p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-4xl font-black text-green-600 dark:text-green-400 mb-2">40%</div>
+                            <p class="text-[#111418] dark:text-white font-semibold mb-1">Reduction in fraud losses</p>
+                            <p class="text-sm text-[#637588] dark:text-gray-400">Compared to previous rule-based system</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-black text-green-600 dark:text-green-400 mb-2">65%</div>
+                            <p class="text-[#111418] dark:text-white font-semibold mb-1">Fewer false positives</p>
+                            <p class="text-sm text-[#637588] dark:text-gray-400">Improved customer experience</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-black text-green-600 dark:text-green-400 mb-2">5M+</div>
+                            <p class="text-[#111418] dark:text-white font-semibold mb-1">Transactions/day</p>
+                            <p class="text-sm text-[#637588] dark:text-gray-400">Processed with high accuracy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Learnings -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Key Learnings</h2>
+                <div class="space-y-4 text-[#637588] dark:text-gray-400">
+                    <p class="leading-relaxed">
+                        <strong class="text-[#111418] dark:text-white">Production ML is different:</strong> The gap between a model that works in notebooks and one that works at scale in production is significant. Latency, monitoring, and model drift management are as important as accuracy.
+                    </p>
+                    <p class="leading-relaxed">
+                        <strong class="text-[#111418] dark:text-white">Feature engineering matters more than fancy algorithms:</strong> Domain expertise to create meaningful features (transaction velocity, geographic anomalies, behavioral patterns) had more impact than model architecture choices.
+                    </p>
+                    <p class="leading-relaxed">
+                        <strong class="text-[#111418] dark:text-white">Explainability is critical:</strong> In financial services, being able to explain why a transaction was flagged is essential for compliance and customer trust. We built interpretation tools alongside the models.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex gap-4 pt-8">
+                <a href="../projects.html" class="inline-flex items-center px-6 py-3 bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 rounded-lg text-[#111418] dark:text-white font-semibold hover:border-primary transition-all">
+                    <span class="material-symbols-outlined mr-2">arrow_back</span>
+                    Back to Projects
+                </a>
+                <a href="../vault.html" class="inline-flex items-center px-6 py-3 bg-primary hover:bg-blue-600 rounded-lg text-white font-semibold transition-all shadow-lg hover:shadow-xl">
+                    Discuss Similar Projects
+                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#1a2634] py-8">
+    <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-[#637588] dark:text-gray-400">© 2024 Derek Wu. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/navbar-loader.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>
