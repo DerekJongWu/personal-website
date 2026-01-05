@@ -63,33 +63,13 @@
         </div>
     </section>
 
-    <!-- Filter Section -->
-    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-8">
-        <div class="flex flex-wrap gap-3">
-            <button class="filter-btn active px-5 py-2 rounded-full bg-primary text-white text-sm font-semibold transition-all" data-filter="all">
-                All Projects
-            </button>
-            <button class="filter-btn px-5 py-2 rounded-full bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 text-[#111418] dark:text-white text-sm font-medium hover:border-primary transition-all" data-filter="ml">
-                Machine Learning
-            </button>
-            <button class="filter-btn px-5 py-2 rounded-full bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 text-[#111418] dark:text-white text-sm font-medium hover:border-primary transition-all" data-filter="healthcare">
-                Healthcare
-            </button>
-            <button class="filter-btn px-5 py-2 rounded-full bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 text-[#111418] dark:text-white text-sm font-medium hover:border-primary transition-all" data-filter="fintech">
-                Fintech
-            </button>
-            <button class="filter-btn px-5 py-2 rounded-full bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 text-[#111418] dark:text-white text-sm font-medium hover:border-primary transition-all" data-filter="consulting">
-                Consulting
-            </button>
-        </div>
-    </section>
 
     <!-- Projects Grid -->
     <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- Project 1: Fraud Detection -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="ml fintech">
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-500 to-blue-700">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-8xl opacity-50">security</span>
@@ -115,27 +95,25 @@
                 </div>
             </article>
 
-            <!-- Project 2: AI Healthcare -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="ml healthcare">
-                <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-green-500 to-teal-600">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-white text-8xl opacity-50">biotech</span>
-                    </div>
+            <!-- Project 2: VC Website -->
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
+                <div class="relative w-full aspect-[16/10] overflow-hidden">
+                    <img src="../images/vc-website/vc-website-screenshot.png" alt="VC Website" class="w-full h-full object-cover"/>
                 </div>
                 <div class="flex flex-1 flex-col p-6">
                     <div class="flex items-start justify-between mb-3">
-                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">AI Healthcare Platform</h3>
-                        <span class="inline-flex items-center px-2 py-1 rounded-md bg-green-50 dark:bg-green-900/30 text-xs font-medium text-green-700 dark:text-green-300">Healthcare</span>
+                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">VC Website</h3>
+                        <span class="inline-flex items-center px-2 py-1 rounded-md bg-cyan-50 dark:bg-cyan-900/30 text-xs font-medium text-cyan-700 dark:text-cyan-300">VC</span>
                     </div>
                     <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-6">
-                        Deep learning models for medical image analysis, assisting radiologists in early disease detection with 95%+ accuracy rates.
+                        Modern, responsive website for a venture capital firm showcasing portfolio companies, investment thesis, and team expertise.
                     </p>
                     <div class="mt-auto flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">PyTorch</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Computer Vision</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Docker</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">React</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">TypeScript</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Tailwind CSS</span>
                     </div>
-                    <a href="projects/healthcare-ai.html" class="inline-flex items-center text-sm font-bold text-primary hover:text-blue-600 transition-colors">
+                    <a href="projects/vc-website.html" class="inline-flex items-center text-sm font-bold text-primary hover:text-blue-600 transition-colors">
                         View Project
                         <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
                     </a>
@@ -143,7 +121,7 @@
             </article>
 
             <!-- Project 3: Intelligence Image Processing -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="ml">
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-purple-500 to-indigo-600">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-8xl opacity-50">visibility</span>
@@ -170,7 +148,7 @@
             </article>
 
             <!-- Project 4: Small Business ML Consulting -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="ml consulting">
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-orange-500 to-red-600">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-8xl opacity-50">trending_up</span>
@@ -197,7 +175,7 @@
             </article>
 
             <!-- Project 5: Portfolio Analytics Dashboard -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="fintech">
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-600">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-8xl opacity-50">analytics</span>
@@ -224,7 +202,7 @@
             </article>
 
             <!-- Project 6: NLP Customer Insights -->
-            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm" data-category="ml consulting">
+            <article class="project-card scroll-animate flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm">
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-pink-500 to-rose-600">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <span class="material-symbols-outlined text-white text-8xl opacity-50">psychology</span>
@@ -268,33 +246,5 @@
 
 <script src="../js/navbar-loader.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    // Project filtering
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const filter = btn.dataset.filter;
-
-            // Update active button
-            filterBtns.forEach(b => {
-                b.classList.remove('active', 'bg-primary', 'text-white');
-                b.classList.add('bg-white', 'dark:bg-[#1a2634]', 'border', 'border-[#e5e7eb]', 'dark:border-gray-800');
-            });
-            btn.classList.add('active', 'bg-primary', 'text-white');
-            btn.classList.remove('bg-white', 'dark:bg-[#1a2634]', 'border', 'border-[#e5e7eb]', 'dark:border-gray-800');
-
-            // Filter projects
-            projectCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category.includes(filter)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-</script>
 </body>
 </html>
