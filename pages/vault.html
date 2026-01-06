@@ -41,22 +41,114 @@
 <div id="navbar-container"></div>
 
 <main class="flex-1 flex flex-col items-center w-full">
-    <!-- Vault Section -->
-    <section class="w-full max-w-[1200px] px-6 lg:px-10 py-12 lg:py-20">
+    <!-- Vault Section (shown only when authenticated) -->
+    <section id="vault-content" class="w-full max-w-[1200px] px-6 lg:px-10 py-12 lg:py-20" style="display: none;">
         <div class="flex flex-col gap-4 animate-fade-in-up">
-            <h1 class="text-[#111418] dark:text-white text-5xl sm:text-6xl lg:text-7xl font-black font-display leading-tight tracking-tight">
-                Vault
-            </h1>
-            <p class="text-[#637588] dark:text-gray-400 text-lg sm:text-xl max-w-3xl leading-relaxed">
-                Password protected. Deals I liked but we didn't invest in.
-            </p>
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h1 class="text-[#111418] dark:text-white text-5xl sm:text-6xl lg:text-7xl font-black font-display leading-tight tracking-tight">
+                        Vault
+                    </h1>
+                    <p class="text-[#637588] dark:text-gray-400 text-lg sm:text-xl max-w-3xl leading-relaxed mt-4">
+                        Password protected. Deals I liked but we didn't invest in.
+                    </p>
+                </div>
+                <button 
+                    id="vault-logout-btn"
+                    class="px-4 py-2 text-sm font-medium text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary border border-[#e5e7eb] dark:border-gray-800 rounded-lg hover:border-primary transition-all flex items-center gap-2"
+                    title="Logout"
+                >
+                    <span class="material-symbols-outlined text-base">logout</span>
+                    Logout
+                </button>
+            </div>
         </div>
         
-        <!-- Placeholder for content -->
+        <!-- Vault Content -->
         <div class="mt-12">
-            <p class="text-[#637588] dark:text-gray-400 italic">
-                Content coming soon...
-            </p>
+            <!-- Company Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Trustwise Card -->
+                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='vault/company1.html'">
+                    <div class="flex flex-1 flex-col p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Trustwise</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-red-50 dark:bg-red-900/30 text-xs font-medium text-red-700 dark:text-red-300">Cybersecurity</span>
+                        </div>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
+                            Agentic Security, the HR control tower for AI agents
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
+                            <div class="flex items-center justify-between">
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[#637588] dark:text-gray-400">Sourced</span>
+                                    <span class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[#637588] dark:text-gray-400">Diligenced</span>
+                                </div>
+                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Company Card Template -->
+                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex flex-1 flex-col p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-green-50 dark:bg-green-900/30 text-xs font-medium text-green-700 dark:text-green-300">Sector</span>
+                        </div>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
+                            Brief description of the company and why it was interesting...
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
+                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Company Card Template -->
+                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex flex-1 flex-col p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-purple-50 dark:bg-purple-900/30 text-xs font-medium text-purple-700 dark:text-purple-300">Sector</span>
+                        </div>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
+                            Brief description of the company and why it was interesting...
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
+                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Company Card Template -->
+                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="flex flex-1 flex-col p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
+                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-orange-50 dark:bg-orange-900/30 text-xs font-medium text-orange-700 dark:text-orange-300">Sector</span>
+                        </div>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
+                            Brief description of the company and why it was interesting...
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
+                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </div>
     </section>
 </main>
@@ -75,6 +167,28 @@
 
 <script src="../js/navbar-loader.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/vault-auth.js"></script>
+<script>
+// Handle logout button
+document.addEventListener('DOMContentLoaded', () => {
+    const logoutBtn = document.getElementById('vault-logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            sessionStorage.removeItem('vault_authenticated');
+            sessionStorage.removeItem('vault_auth_timestamp');
+            window.location.reload();
+        });
+    }
+    
+    // Check session timeout periodically (every minute)
+    setInterval(() => {
+        if (typeof isAuthenticated === 'function' && !isAuthenticated()) {
+            // Session expired - reload to show login form
+            window.location.reload();
+        }
+    }, 60000); // Check every minute
+});
+</script>
 </body>
 </html>
 

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Trustwise - Vault - Derek Wu</title>
+    <meta name="description" content="Trustwise: Agentic Security, the HR control tower for AI agents"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../css/styles.css"/>
+    <style>
+        /* Animation for heading highlight - brush effect */
+        h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+        
+        .heading-highlight {
+            position: relative;
+            display: inline-block;
+            padding: 0.125rem 0.375rem;
+            margin: -0.125rem -0.375rem;
+            border-radius: 0.25rem;
+            vertical-align: baseline;
+        }
+        
+        .heading-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(43, 124, 238, 0.35);
+            border-radius: 0.25rem;
+            z-index: -1;
+            animation: brush-highlight 0.8s ease-out;
+            transform-origin: left;
+        }
+        
+        .dark .heading-highlight::before {
+            background-color: rgba(43, 124, 238, 0.45);
+        }
+        
+        @keyframes brush-highlight {
+            0% {
+                transform: scaleX(0);
+                opacity: 0.8;
+            }
+            60% {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scaleX(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden antialiased">
+
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
+
+<main class="flex-1 flex flex-col items-center w-full">
+    <!-- Breadcrumb -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-16 pt-8">
+        <div class="flex items-center gap-2 text-sm">
+            <a href="../vault.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Vault</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <span class="text-[#111418] dark:text-white font-semibold">Trustwise</span>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-16 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left: Main Content -->
+            <div class="lg:col-span-8">
+                <!-- Header -->
+                <div class="mb-12">
+                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 dark:bg-red-900/30 text-sm font-medium text-red-700 dark:text-red-300">Cybersecurity</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md bg-blue-50 dark:bg-blue-900/30 text-xs font-medium text-blue-700 dark:text-blue-300">Sourced</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md bg-purple-50 dark:bg-purple-900/30 text-xs font-medium text-purple-700 dark:text-purple-300">Presented to IC</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-md bg-orange-50 dark:bg-orange-900/30 text-xs font-medium text-orange-700 dark:text-orange-300">Not Invested</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl font-black text-[#111418] dark:text-white leading-tight mb-4">
+                        Trustwise
+                    </h1>
+                    <p class="text-lg text-[#637588] dark:text-gray-400 leading-relaxed">
+                        Agentic Security, the HR control tower for AI agents
+                    </p>
+                </div>
+
+                <!-- Content Sections -->
+                <div class="prose dark:prose-invert max-w-none space-y-16">
+                    
+                    <!-- Summary Section -->
+                    <section id="summary" class="scroll-section">
+                        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6 pb-1">Summary</h2>
+                        <div class="text-[#637588] dark:text-gray-400 leading-relaxed text-base">
+                            <p class="mb-4">
+                                TechFlow Solutions is a B2B software company founded in 2019 that provides workflow automation tools for mid-sized enterprises. The company has raised $12M in Series A funding and currently serves over 250 clients across North America and Europe. With a team of 45 employees based in Austin, Texas, TechFlow has demonstrated 180% year-over-year growth and maintains a 94% customer retention rate.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Team Section -->
+                    <section id="team" class="scroll-section">
+                        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6 pb-1">Team</h2>
+                        <div class="text-[#637588] dark:text-gray-400 leading-relaxed text-base">
+                            <p class="mb-4">
+                                The founding team brings diverse experience from leading tech companies. CEO Sarah Martinez previously led product development at Salesforce for 8 years, while CTO James Chen was an early engineer at Dropbox. CFO Michael Rodriguez has 15 years of experience in SaaS finance, having served as VP of Finance at HubSpot. The executive team is supported by experienced heads of engineering, sales, and customer success, each with 10+ years in their respective fields.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Problem Section -->
+                    <section id="problem" class="scroll-section">
+                        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6 pb-1">Problem</h2>
+                        <div class="text-[#637588] dark:text-gray-400 leading-relaxed text-base">
+                            <p class="mb-4">
+                                Mid-sized companies struggle with fragmented workflows across multiple software platforms, leading to inefficiencies, data silos, and employee frustration. Manual data entry between systems consumes an average of 12 hours per employee per week, while integration costs with traditional enterprise software can exceed $100K annually. Existing solutions are either too expensive and complex for mid-market companies or too simplistic to handle sophisticated business processes.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Product Section -->
+                    <section id="product" class="scroll-section">
+                        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6 pb-1">Product</h2>
+                        <div class="text-[#637588] dark:text-gray-400 leading-relaxed text-base">
+                            <p class="mb-4">
+                                TechFlow's platform offers a no-code workflow automation solution that connects 200+ business applications through a visual interface. Users can build custom workflows in minutes without technical expertise, using pre-built templates for common business processes. The platform includes real-time analytics, collaborative workflow design, and enterprise-grade security features. Key differentiators include AI-powered workflow suggestions and a flexible pricing model that scales with usage.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Outcome Section -->
+                    <section id="outcome" class="scroll-section">
+                        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-6 pb-1">Outcome</h2>
+                        <div class="text-[#637588] dark:text-gray-400 leading-relaxed text-base">
+                            <p class="mb-4">
+                                Since launching commercially in 2020, TechFlow has helped clients save an average of 15 hours per employee per week and reduce software integration costs by 60%. Customer surveys indicate a 4.8/5 satisfaction rating, with customers reporting improved team productivity and reduced operational costs. The company projects reaching profitability by Q3 2024 and plans to expand into Asian markets in 2025.
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Right: Table of Contents Sidebar -->
+            <div class="lg:col-span-4">
+                <div id="toc-sidebar" class="sticky top-24">
+                    <div class="bg-white dark:bg-[#1a2634] rounded-lg border border-[#e5e7eb] dark:border-gray-800 p-4">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-sm font-semibold text-[#111418] dark:text-white">Table of Contents</h3>
+                            <button 
+                                id="scroll-to-top"
+                                class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                                title="Scroll to top"
+                                aria-label="Scroll to top"
+                            >
+                                <span class="material-symbols-outlined text-base text-[#637588] dark:text-gray-400">keyboard_arrow_up</span>
+                            </button>
+                        </div>
+                        <nav class="space-y-1">
+                            <a 
+                                href="#summary" 
+                                class="toc-link block px-3 py-2 text-sm text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                                data-section="summary"
+                            >
+                                Summary
+                            </a>
+                            <a 
+                                href="#team" 
+                                class="toc-link block px-3 py-2 text-sm text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ml-4"
+                                data-section="team"
+                            >
+                                Team
+                            </a>
+                            <a 
+                                href="#problem" 
+                                class="toc-link block px-3 py-2 text-sm text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ml-4"
+                                data-section="problem"
+                            >
+                                Problem
+                            </a>
+                            <a 
+                                href="#product" 
+                                class="toc-link block px-3 py-2 text-sm text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ml-4"
+                                data-section="product"
+                            >
+                                Product
+                            </a>
+                            <a 
+                                href="#outcome" 
+                                class="toc-link block px-3 py-2 text-sm text-[#637588] dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ml-4"
+                                data-section="outcome"
+                            >
+                                Outcome
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back Button -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-16 pb-20">
+        <a href="../vault.html" class="inline-flex items-center px-6 py-3 bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 rounded-lg text-[#111418] dark:text-white font-semibold hover:border-primary transition-all">
+            <span class="material-symbols-outlined mr-2">arrow_back</span>
+            Back to Vault
+        </a>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#1a2634] py-8">
+    <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-[#637588] dark:text-gray-400">© 2024 Derek Wu. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/navbar-loader.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/vault-auth.js"></script>
+<script>
+// Protect this page - check authentication
+(function() {
+    function checkAuth() {
+        const authStatus = sessionStorage.getItem('vault_authenticated');
+        const authTimestamp = sessionStorage.getItem('vault_auth_timestamp');
+        
+        if (authStatus !== 'true' || !authTimestamp) {
+            window.location.href = '../vault.html';
+            return;
+        }
+        
+        // Check if session has expired (30 minutes)
+        const SESSION_TIMEOUT = 30 * 60 * 1000;
+        const now = Date.now();
+        const sessionStart = parseInt(authTimestamp, 10);
+        const sessionAge = now - sessionStart;
+        
+        if (sessionAge > SESSION_TIMEOUT) {
+            sessionStorage.removeItem('vault_authenticated');
+            sessionStorage.removeItem('vault_auth_timestamp');
+            window.location.href = '../vault.html';
+            return;
+        }
+    }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', checkAuth);
+    } else {
+        checkAuth();
+    }
+})();
+</script>
+<script>
+// Table of Contents functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.scroll-section');
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const tocSidebar = document.getElementById('toc-sidebar');
+
+    // Smooth scroll for TOC links with highlight animation
+    tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                const offset = 100; // Account for sticky header
+                const targetPosition = targetSection.offsetTop - offset;
+                
+                // Scroll to section
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Find the heading in the target section and highlight it
+                setTimeout(() => {
+                    const heading = targetSection.querySelector('h2');
+                    if (heading) {
+                        // Remove any existing highlight class
+                        heading.classList.remove('heading-highlight');
+                        
+                        // Trigger reflow to restart animation
+                        void heading.offsetWidth;
+                        
+                        // Add highlight class
+                        heading.classList.add('heading-highlight');
+                        
+                        // Remove class after animation completes
+                        setTimeout(() => {
+                            heading.classList.remove('heading-highlight');
+                        }, 800);
+                    }
+                }, 300); // Wait for scroll to complete
+            }
+        });
+    });
+
+    // Scroll to top button
+    if (scrollToTopBtn) {
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Update active TOC link based on scroll position
+    function updateActiveTOCLink() {
+        const scrollPosition = window.scrollY + 150; // Offset for better UX
+
+        sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            const tocLink = document.querySelector(`.toc-link[data-section="${sectionId}"]`);
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                // Remove active class from all links
+                tocLinks.forEach(link => {
+                    link.classList.remove('text-primary', 'dark:text-primary', 'font-semibold');
+                    link.classList.add('text-[#637588]', 'dark:text-gray-400');
+                });
+                // Add active class to current link
+                if (tocLink) {
+                    tocLink.classList.add('text-primary', 'dark:text-primary', 'font-semibold');
+                    tocLink.classList.remove('text-[#637588]', 'dark:text-gray-400');
+                }
+            }
+        });
+
+        // Check if we're at the top
+        if (window.scrollY < 100) {
+            tocLinks.forEach(link => {
+                link.classList.remove('text-primary', 'dark:text-primary', 'font-semibold');
+                link.classList.add('text-[#637588]', 'dark:text-gray-400');
+            });
+            const firstLink = document.querySelector('.toc-link[data-section="summary"]');
+            if (firstLink) {
+                firstLink.classList.add('text-primary', 'dark:text-primary', 'font-semibold');
+                firstLink.classList.remove('text-[#637588]', 'dark:text-gray-400');
+            }
+        }
+    }
+
+    // Update on scroll
+    window.addEventListener('scroll', updateActiveTOCLink);
+    updateActiveTOCLink(); // Initial call
+});
+</script>
+</body>
+</html>
+

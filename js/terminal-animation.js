@@ -29,7 +29,7 @@ class TerminalAnimation {
             },
             {
                 prompt: 'ls projects/',
-                output: 'fraud-detection/\nneural-networks/\nvc-portfolio/\nstartup-analysis/',
+                output: 'market-intelligence/\nvc-website/\ncompany-bets/\ncrm-wrapped/\npersonal-website/',
                 delay: 60
             },
             {
