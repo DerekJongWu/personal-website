@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Market Intelligence Agent - Derek Wu</title>
+    <meta name="description" content="AI-powered market intelligence application that analyzes market trends and discovers relevant startups using Claude AI"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden antialiased">
+
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
+
+<main class="flex-1 flex flex-col items-center w-full">
+    <!-- Breadcrumb -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pt-8">
+        <div class="flex items-center gap-2 text-sm">
+            <a href="../../index.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <a href="../projects.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Projects</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <span class="text-[#111418] dark:text-white font-semibold">Market Intelligence Agent</span>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 py-12">
+        <div class="space-y-8">
+            <!-- Project Header -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-900/30 text-sm font-medium text-purple-700 dark:text-purple-300">AI</span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-sm font-medium text-blue-700 dark:text-blue-300">Web App</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#111418] dark:text-white leading-tight">
+                    Market Intelligence Agent
+                </h1>
+            </div>
+
+            <!-- Video and Meta Card Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 items-stretch">
+                <!-- Project Video -->
+                <div class="lg:col-span-3 flex">
+                    <div class="relative w-full rounded-2xl overflow-hidden bg-black shadow-xl flex-1">
+                        <video class="w-full h-full object-contain" controls autoplay muted loop>
+                            <source src="../../images/market-intelligence/market-intel-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Right: Project Meta -->
+                <div class="lg:col-span-2 flex">
+                    <!-- Meta Info Card -->
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 space-y-4 w-full flex flex-col flex-1">
+                        <div>
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Repository</h3>
+                            <a href="https://github.com/DerekJongWu/market-intelligence" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#111418] dark:text-white font-medium hover:text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Project Type</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">AI-Powered Web Application</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Timeline</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">2025</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4 flex-1">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Tech Stack</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Next.js</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">React</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Tailwind CSS</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Claude AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-20">
+        <div class="space-y-12">
+            <!-- Overview -->
+            <div class="prose dark:prose-invert max-w-none">
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Overview</h2>
+                <p class="text-[#637588] dark:text-gray-400 leading-relaxed text-lg">
+                    Built an AI-powered market intelligence application that analyzes market trends and discovers relevant startups using Claude AI with real-time web search capabilities. The application uses a two-stage AI research process: first identifying the top 5 emerging trends in any market, then discovering 5 real, relevant startups for each trend. The platform features a modern, responsive UI with secure server-side API architecture.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-6">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">psychology</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Two-Stage AI Research</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            First identifies market trends, then discovers relevant startups for each trend using Claude AI's advanced reasoning capabilities.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Real-Time Web Search</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Uses Claude's web search capabilities to find current, accurate information about market trends and startups in real-time.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">security</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Secure API Architecture</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            API key safely stored server-side via Next.js API routes, never exposed to client-side code for maximum security.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">palette</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Modern UI/UX</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Beautiful, responsive design with Tailwind CSS featuring comprehensive loading states and error handling for optimal user experience.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">rocket_launch</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Production Ready</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Built with Next.js 15 App Router with proper error handling, optimized API calls, and ready for deployment on Vercel.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-pink-50 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">insights</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Rich Insights</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Provides detailed descriptions of trends and how startups fit into them, with comprehensive market analysis and startup information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Approach -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Technical Approach</h2>
+                <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Next.js 15 App Router</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Built with Next.js 15 using the App Router for server-side rendering, API routes, and optimized performance</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Claude AI Integration</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Leverages Anthropic Claude (claude-sonnet-4-20250514) with web search capabilities for real-time market research and startup discovery</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Two-Stage API Process</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">First API call identifies 5 market trends, second call discovers 5 relevant startups for each trend, with comprehensive JSON cleaning and error handling</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Server-Side Security</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">All AI API calls handled server-side via Next.js API routes, ensuring API keys are never exposed to client-side code</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Tailwind CSS & Responsive Design</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Modern UI built with Tailwind CSS 3.4, featuring responsive grid layouts, loading states, and Lucide React icons</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">How It Works</h2>
+                <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-8">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-2">1. User Query Submission</h3>
+                            <p class="text-[#637588] dark:text-gray-400 text-sm">
+                                Users enter a market query (e.g., "AI Security", "Climate tech solutions") via the frontend form, which calls the `/api/analyze` POST endpoint.
+                            </p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-2">2. Trend Analysis</h3>
+                            <p class="text-[#637588] dark:text-gray-400 text-sm">
+                                First API call uses Claude AI with web search to identify the top 5 emerging trends or themes in the specified market, providing detailed descriptions of each trend.
+                            </p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-2">3. Startup Discovery</h3>
+                            <p class="text-[#637588] dark:text-gray-400 text-sm">
+                                For each identified trend, a second API call researches and finds 5 real, relevant startups, including company names, descriptions, and founding information.
+                            </p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-2">4. Results Display</h3>
+                            <p class="text-[#637588] dark:text-gray-400 text-sm">
+                                Frontend displays trends and startups in an organized, visual format with responsive grid layout, showing how each startup fits into the identified trends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Use Cases -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Example Use Cases</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <h3 class="font-semibold text-[#111418] dark:text-white mb-2">AI Security</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">Discover emerging trends in AI security and find startups building solutions in this space.</p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <h3 class="font-semibold text-[#111418] dark:text-white mb-2">Climate Tech Solutions</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">Analyze market trends in climate technology and identify relevant startups.</p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <h3 class="font-semibold text-[#111418] dark:text-white mb-2">Healthcare Automation</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">Explore trends in healthcare automation and discover innovative startups.</p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <h3 class="font-semibold text-[#111418] dark:text-white mb-2">Financial Technology</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">Research fintech innovations and find startups disrupting the financial sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex gap-4 pt-8">
+                <a href="../projects.html" class="inline-flex items-center px-6 py-3 bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 rounded-lg text-[#111418] dark:text-white font-semibold hover:border-primary transition-all">
+                    <span class="material-symbols-outlined mr-2">arrow_back</span>
+                    Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#1a2634] py-8">
+    <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-[#637588] dark:text-gray-400">© 2024 Derek Wu. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/navbar-loader.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>
+
