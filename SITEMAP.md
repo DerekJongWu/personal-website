@@ -24,9 +24,8 @@ Visual representation of the complete website structure.
    │     ├─ 🔐 Fraud Detection ML System (pages/projects/fraud-detection.html)
    │     ├─ 🏥 AI Healthcare Platform (pages/projects/healthcare-ai.html) *
    │     ├─ 👁️ Intelligence Image Processing (pages/projects/intelligence-imaging.html) *
-   │     ├─ 📊 Small Business ML Solutions (pages/projects/consulting-ml.html) *
-   │     ├─ 📈 VC Portfolio Analytics (pages/projects/vc-analytics.html) *
-   │     └─ 🧠 NLP Customer Insights (pages/projects/nlp-insights.html) *
+     │     ├─ 🎵 CRM Wrapped (pages/projects/crm-wrapped.html)
+     │     └─ 🌐 Personal Website (pages/projects/personal-website.html)
    │
    ├─ 📝 Blog (pages/blog.html)
    │  │

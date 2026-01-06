@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Personal Website - Derek Wu</title>
+    <meta name="description" content="Modern, responsive portfolio website with animated SVG visualization showcasing work in ML engineering and venture capital"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden antialiased">
+
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
+
+<main class="flex-1 flex flex-col items-center w-full">
+    <!-- Breadcrumb -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pt-8">
+        <div class="flex items-center gap-2 text-sm">
+            <a href="../../index.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <a href="../projects.html" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Projects</a>
+            <span class="text-[#637588] dark:text-gray-600">/</span>
+            <span class="text-[#111418] dark:text-white font-semibold">Personal Website</span>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 py-12">
+        <div class="space-y-8">
+            <!-- Project Header -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-sm font-medium text-blue-700 dark:text-blue-300">Portfolio</span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-900/30 text-sm font-medium text-purple-700 dark:text-purple-300">Web Development</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#111418] dark:text-white leading-tight">
+                    Personal Website
+                </h1>
+            </div>
+
+            <!-- Video and Meta Card Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 items-stretch">
+                <!-- Project Video -->
+                <div class="lg:col-span-3 flex">
+                    <div class="relative w-full rounded-2xl overflow-hidden bg-black shadow-xl flex-1">
+                        <video class="w-full h-full object-contain" controls autoplay muted loop>
+                            <source src="../../images/personal-website/personal-website-demo.mov" type="video/quicktime">
+                            <source src="../../images/personal-website/personal-website-demo.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Right: Project Meta -->
+                <div class="lg:col-span-2 flex">
+                    <!-- Meta Info Card -->
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 space-y-4 w-full flex flex-col flex-1">
+                        <div>
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Repository</h3>
+                            <a href="https://github.com/DerekJongWu/personal-website" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#111418] dark:text-white font-medium hover:text-primary transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Project Type</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">Portfolio Website</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Timeline</h3>
+                            <p class="text-[#111418] dark:text-white font-medium">2024-2025</p>
+                        </div>
+                        <div class="border-t border-[#e5e7eb] dark:border-gray-800 pt-4 flex-1">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-gray-500 mb-2">Tech Stack</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">HTML5</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">CSS3</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">JavaScript</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">Tailwind CSS</span>
+                                <span class="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-md font-medium">SVG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="w-full max-w-[1200px] px-6 lg:px-10 pb-20">
+        <div class="space-y-12">
+            <!-- Overview -->
+            <div class="prose dark:prose-invert max-w-none">
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Overview</h2>
+                <p class="text-[#637588] dark:text-gray-400 leading-relaxed text-lg">
+                    Built a modern, responsive portfolio website showcasing work in machine learning engineering, venture capital, and technology consulting. The site features a custom animated SVG visualization that morphs through three states on a 15-second loop: chemical engineering molecules (benzene ring structure), neural network layers, and VC decision trees - representing the career journey from chemical engineering to ML and VC. The website includes a multi-page architecture with project showcases, Substack blog integration, and contact forms, all optimized for performance, accessibility, and easy deployment.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-6">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">animation</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Animated SVG Hero</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Custom SVG animation that morphs through three states (molecules → neural network → decision trees) using pure CSS animations, creating an engaging visual narrative of the career journey.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Dark Mode</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            System-aware theme switching with manual toggle, using Tailwind CSS dark mode classes and localStorage persistence for seamless user experience.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 text-purple-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">devices</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Responsive Design</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Mobile-first approach with Tailwind CSS, ensuring optimal user experience across all device sizes from mobile phones to large desktop displays.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">speed</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Performance Optimized</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Pure CSS/SVG animations with minimal JavaScript, resulting in fast load times and smooth interactions without heavy framework dependencies.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">accessibility</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Accessibility</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Semantic HTML, ARIA labels, keyboard navigation support, and proper contrast ratios ensuring the site is accessible to all users.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-pink-50 dark:bg-pink-900/30 text-pink-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">article</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Multi-page Architecture</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Comprehensive site structure with home, projects showcase, Substack blog integration, and contact pages, all with consistent navigation and styling.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6">
+                        <div class="size-12 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">rss_feed</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">Substack Integration</h3>
+                        <p class="text-[#637588] dark:text-gray-400 text-sm">
+                            Seamless blog integration with Substack embed, allowing readers to browse articles and subscribe to the newsletter directly from the site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Approach -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Technical Approach</h2>
+                <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Vanilla JavaScript</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Built with pure JavaScript for dark mode, navigation, and utilities - no framework dependencies, resulting in lightweight and fast performance</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Tailwind CSS</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Utilized Tailwind CSS via CDN for rapid UI development with utility-first styling, responsive design, and dark mode support</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Custom SVG Animations</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Created custom SVG morphing animations using CSS keyframes and transitions on a 15-second loop: molecules (0-5s), neural network (5-10s), and decision tree (10-15s), representing the career journey</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Google Fonts & Icons</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Integrated Google Fonts (Manrope for UI, Playfair Display for serif accents) and Material Symbols Outlined icons for a cohesive, professional typography system</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Semantic HTML</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Used semantic HTML5 elements and proper document structure for SEO optimization and accessibility compliance</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Modular Architecture</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Organized codebase with separate CSS and JavaScript files, reusable components, and clear separation of concerns for maintainability</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Deployment Ready</h3>
+                                <p class="text-[#637588] dark:text-gray-400 text-sm">Configured for easy deployment on Netlify, Vercel, or GitHub Pages with netlify.toml configuration, optimized static assets, and support for Netlify Forms</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Design Philosophy -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#111418] dark:text-white mb-4">Design Philosophy</h2>
+                <div class="bg-white dark:bg-[#1a2634] rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-8">
+                    <p class="text-[#637588] dark:text-gray-400 text-lg leading-relaxed mb-6">
+                        The website was built with a focus on clean, minimal design that prioritizes fast load times, accessibility, and professional presentation. The animated SVG hero section serves as both a visual centerpiece and a narrative device, telling the story of the career transition through interactive visualizations.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-3xl mb-2">speed</span>
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Fast</h3>
+                            <p class="text-xs text-[#637588] dark:text-gray-400">Pure CSS/SVG animations, minimal JavaScript</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-3xl mb-2">accessibility</span>
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Accessible</h3>
+                            <p class="text-xs text-[#637588] dark:text-gray-400">Semantic HTML, ARIA labels, keyboard navigation</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-3xl mb-2">palette</span>
+                            <h3 class="font-semibold text-[#111418] dark:text-white mb-1">Professional</h3>
+                            <p class="text-xs text-[#637588] dark:text-gray-400">Clean design, consistent branding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex gap-4 pt-8">
+                <a href="../projects.html" class="inline-flex items-center px-6 py-3 bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 rounded-lg text-[#111418] dark:text-white font-semibold hover:border-primary transition-all">
+                    <span class="material-symbols-outlined mr-2">arrow_back</span>
+                    Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#1a2634] py-8">
+    <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-[#637588] dark:text-gray-400">© 2024 Derek Wu. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/navbar-loader.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>
+
