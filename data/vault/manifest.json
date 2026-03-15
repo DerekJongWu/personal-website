@@ -2,10 +2,10 @@
   {
     "slug": "trustwise",
     "file": "Trustwise.MD",
-    "name": "Trustwise AI",
-    "description": "Agentic Security, the HR control tower for AI agents",
-    "sector": "Cybersecurity",
-    "tags": ["Sourced", "Diligenced", "Presented to IC", "Not Invested"]
+    "name": "Trustwise",
+    "description": "AI Trust Management & Runtime Security — small language model-powered platform for observing, controlling, and aligning the behavior of AI agents in enterprise environments",
+    "sector": "AI Safety / Trust",
+    "tags": ["Sourced", "Series A", "Presented to IC", "Not Invested"]
   },
   {
     "slug": "rapidfort",
@@ -27,8 +27,40 @@
     "slug": "evenup",
     "file": "EvenUp.MD",
     "name": "EvenUp",
-    "description": "",
-    "sector": "",
-    "tags": []
+    "description": "AI-Powered Claims Intelligence Platform — predictive and generative AI for personal injury law firms to maximize case value and accelerate settlements",
+    "sector": "Legal Tech / AI",
+    "tags": ["Diligenced", "Series D", "Presented to IC", "Invested"]
+  },
+  {
+    "slug": "qiz-security",
+    "file": "QIZ Security.MD",
+    "name": "QIZ Security",
+    "description": "Cryptography Management Platform — end-to-end discovery, prioritization, and remediation of cryptographic risk across enterprise environments to prepare for the post-quantum era",
+    "sector": "Cybersecurity / PQC",
+    "tags": ["Sourced", "Seed", "Presented to IC", "Not Invested"]
+  },
+  {
+    "slug": "minimal",
+    "file": "Minimal.MD",
+    "name": "Minimal",
+    "description": "Secure Reproducible Environments — declarative, microVM-powered platform for composing isolated dev, agent, and CI environments that are dramatically faster and more secure than Docker",
+    "sector": "Developer Tools / Infrastructure",
+    "tags": ["Diligenced", "Seed", "Presented to IC", "Not Invested"]
+  },
+  {
+    "slug": "not-diamond",
+    "file": "Not Diamond.MD",
+    "name": "Not Diamond",
+    "description": "Multi-Model AI Optimization Layer — intelligent routing, prompt adaptation, and agent optimization infrastructure for enterprises deploying across a fragmented and constantly evolving foundation model landscape",
+    "sector": "AI Infrastructure",
+    "tags": ["Sourced", "Seed", "Presented to IC", "Not Invested"]
+  },
+  {
+    "slug": "reco",
+    "file": "Reco.MD",
+    "name": "Reco",
+    "description": "Dynamic SaaS Security — AI-native platform for discovering, governing, and securing SaaS applications, shadow AI, and AI agents across the enterprise",
+    "sector": "Cybersecurity / SaaS",
+    "tags": ["Diligenced", "Series B", "Presented to IC", "Not Invested"]
   }
 ]
