@@ -9,9 +9,11 @@
 //
 // NOTE: This is client-side protection only. For production use, implement server-side authentication.
 
-// Password hash (SHA-256 hash of the password)
-// Default password is "password" - CHANGE THIS!
-const VAULT_PASSWORD_HASH = '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'; // Default: "password"
+// Password hashes (SHA-256). Add more entries to allow additional passwords.
+const VAULT_PASSWORD_HASHES = [
+    '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', // "password"
+    'a7d973a732d0577f073922ed98f4e20235dbab50df3a45f478b8d32c7ebcbc38', // "Paladin"
+];
 
 // Session timeout in milliseconds (default: 30 minutes)
 // Change this value to adjust how long the session lasts
@@ -59,7 +61,7 @@ async function hashPassword(password) {
 // Authenticate user
 async function authenticate(password) {
     const hashedPassword = await hashPassword(password);
-    if (hashedPassword === VAULT_PASSWORD_HASH) {
+    if (VAULT_PASSWORD_HASHES.includes(hashedPassword)) {
         const now = Date.now();
         sessionStorage.setItem('vault_authenticated', 'true');
         sessionStorage.setItem('vault_auth_timestamp', now.toString());
