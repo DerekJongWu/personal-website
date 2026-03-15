@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "trustwise",
+    "file": "Trustwise.MD",
+    "name": "Trustwise AI",
+    "description": "Agentic Security, the HR control tower for AI agents",
+    "sector": "Cybersecurity",
+    "tags": ["Sourced", "Diligenced", "Presented to IC", "Not Invested"]
+  },
+  {
+    "slug": "rapidfort",
+    "file": "RapidFort.MD",
+    "name": "RapidFort",
+    "description": "Software Supply Chain Security — automated CVE remediation and container hardening at machine speed",
+    "sector": "Cybersecurity",
+    "tags": ["Diligenced", "Series A", "Presented to IC", "Not Invested"]
+  },
+  {
+    "slug": "driver-ai",
+    "file": "Driver AI.MD",
+    "name": "Driver AI",
+    "description": "",
+    "sector": "",
+    "tags": []
+  },
+  {
+    "slug": "evenup",
+    "file": "EvenUp.MD",
+    "name": "EvenUp",
+    "description": "",
+    "sector": "",
+    "tags": []
+  }
+]

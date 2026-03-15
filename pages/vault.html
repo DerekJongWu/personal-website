@@ -66,88 +66,8 @@
         
         <!-- Vault Content -->
         <div class="mt-12">
-            <!-- Company Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- Trustwise Card -->
-                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='vault/company1.html'">
-                    <div class="flex flex-1 flex-col p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Trustwise</h3>
-                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-red-50 dark:bg-red-900/30 text-xs font-medium text-red-700 dark:text-red-300">Cybersecurity</span>
-                        </div>
-                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
-                            Agentic Security, the HR control tower for AI agents
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
-                            <div class="flex items-center justify-between">
-                                <div class="flex flex-wrap gap-1">
-                                    <span class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[#637588] dark:text-gray-400">Sourced</span>
-                                    <span class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[#637588] dark:text-gray-400">Diligenced</span>
-                                </div>
-                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Company Card Template -->
-                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                    <div class="flex flex-1 flex-col p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
-                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-green-50 dark:bg-green-900/30 text-xs font-medium text-green-700 dark:text-green-300">Sector</span>
-                        </div>
-                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
-                            Brief description of the company and why it was interesting...
-            </p>
-                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
-                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Company Card Template -->
-                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                    <div class="flex flex-1 flex-col p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
-                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-purple-50 dark:bg-purple-900/30 text-xs font-medium text-purple-700 dark:text-purple-300">Sector</span>
-                        </div>
-                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
-                            Brief description of the company and why it was interesting...
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
-                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Company Card Template -->
-                <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                    <div class="flex flex-1 flex-col p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-bold text-[#111418] dark:text-white">Company Name</h3>
-                            <span class="inline-flex items-center px-2 py-1 rounded-md bg-orange-50 dark:bg-orange-900/30 text-xs font-medium text-orange-700 dark:text-orange-300">Sector</span>
-                        </div>
-                        <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">
-                            Brief description of the company and why it was interesting...
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
-                            <div class="flex items-center justify-between">
-                                <span class="text-xs text-[#637588] dark:text-gray-400">Stage</span>
-                                <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
+            <div id="vault-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Cards loaded dynamically from data/vault/manifest.json -->
             </div>
         </div>
     </section>
@@ -167,6 +87,54 @@
 <script src="../js/navbar-loader.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/vault-auth.js"></script>
+<script>
+const SECTOR_COLORS = {
+    'Cybersecurity': 'bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300',
+    'AI':            'bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300',
+    'Fintech':       'bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300',
+    'Healthcare':    'bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300',
+    'SaaS':          'bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300',
+    'Enterprise':    'bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300',
+    'Consumer':      'bg-pink-50 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300',
+};
+const DEFAULT_SECTOR_COLOR = 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400';
+
+async function loadVaultCards() {
+    try {
+        const res = await fetch('../data/vault/manifest.json');
+        if (!res.ok) return;
+        const companies = await res.json();
+        const grid = document.getElementById('vault-grid');
+        grid.innerHTML = companies.map(c => {
+            const sectorColor = SECTOR_COLORS[c.sector] || DEFAULT_SECTOR_COLOR;
+            const statusTags = (c.tags || []).map(tag =>
+                `<span class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[#637588] dark:text-gray-400">${tag}</span>`
+            ).join('');
+            return `
+            <article class="company-card scroll-animate flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a2634] border border-[#e5e7eb] dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                     onclick="window.location.href='vault/company.html?slug=${c.slug}'">
+                <div class="flex flex-1 flex-col p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">${c.name}</h3>
+                        ${c.sector ? `<span class="inline-flex items-center px-2 py-1 rounded-md ${sectorColor} text-xs font-medium">${c.sector}</span>` : ''}
+                    </div>
+                    <p class="text-[#637588] dark:text-gray-400 text-sm leading-relaxed mb-4">${c.description}</p>
+                    <div class="mt-auto pt-4 border-t border-[#e5e7eb] dark:border-gray-800">
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-wrap gap-1">${statusTags}</div>
+                            <span class="material-symbols-outlined text-[#637588] dark:text-gray-400 text-base">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </article>`;
+        }).join('');
+    } catch (e) {
+        console.error('Failed to load vault manifest:', e);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadVaultCards);
+</script>
 <script>
 // Handle logout button
 document.addEventListener('DOMContentLoaded', () => {
