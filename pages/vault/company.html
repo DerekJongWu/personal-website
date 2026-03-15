@@ -306,9 +306,12 @@ async function loadCompany() {
     // Render markdown and extract headings (support both ## and ###)
     let html = marked.parse(content);
     const headings = [];
-    html = html.replace(/<h([23])>(.*?)<\/h\1>/gi, (_, level, headingText) => {
-        const id = headingText.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
-        headings.push({ text: headingText, id });
+
+    // Strip any IDs that marked may have already added, then add our own
+    html = html.replace(/<h([23])(?:\s[^>]*)?>(.*?)<\/h\1>/gi, (_, level, headingText) => {
+        const cleanText = headingText.replace(/<[^>]*>/g, '').trim();
+        const id = cleanText.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
+        if (level === '2' || level === '3') headings.push({ text: cleanText, id });
         return `<h${level} id="${id}">${headingText}</h${level}>`;
     });
 
