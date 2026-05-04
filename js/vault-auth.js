@@ -15,6 +15,7 @@ const VAULT_PASSWORD_HASHES = [
     'a7d973a732d0577f073922ed98f4e20235dbab50df3a45f478b8d32c7ebcbc38', // "Paladin"
     '60efbce58d7c45466dfa88e83b9b8b863051d9fc23514000df35975e1c3fdabb', // "iqt"
     'efe10c80ec8a9f38624cbb47103010a8cf32488a503e4b4bfe4f92307a9cefa7', // "Primary"
+    '3b6a8bc4a72be52209be9ca4dc307014d67d33e46270af303c4ad6140318bfd2', // "BCV"
 ];
 
 // Session timeout in milliseconds (default: 30 minutes)
