@@ -12,10 +12,10 @@
 // Password hashes (SHA-256). Add more entries to allow additional passwords.
 const VAULT_PASSWORD_HASHES = [
     '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', // "password"
-    'a7d973a732d0577f073922ed98f4e20235dbab50df3a45f478b8d32c7ebcbc38', // "Paladin"
     '60efbce58d7c45466dfa88e83b9b8b863051d9fc23514000df35975e1c3fdabb', // "iqt"
     'efe10c80ec8a9f38624cbb47103010a8cf32488a503e4b4bfe4f92307a9cefa7', // "Primary"
     '3b6a8bc4a72be52209be9ca4dc307014d67d33e46270af303c4ad6140318bfd2', // "BCV"
+    '4cb37c619b60aabe4baa81484f238d7e18a65a4170812aa25a88118c0a471c2f', // "canaan"
 ];
 
 // Session timeout in milliseconds (default: 30 minutes)
